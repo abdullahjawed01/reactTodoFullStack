@@ -4,8 +4,8 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT ;
-import "./utils/dbConnect.js"
-import router from "./controllers/index.js";
+import "../utils/dbConnect.js"
+import router from "../controllers/index.js";
 app.use(express.json())
 
 app.get("/", (req, res) => {
